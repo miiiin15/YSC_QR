@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#554896">
+
+
+    <ImageView
+        android:id="@+id/Main_img"
+        android:src="@drawable/ysc2"
+        android:background="@drawable/ysc_sq1"
+        android:layout_width="150dp"
+        android:layout_height="120dp"/>
+    <TextView
+        android:id="@+id/Main"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="데이터 통계"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:text="0000년 0월 0일 유동량"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:background="@drawable/ysc_sq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#F8FAFF"
+        android:text="조 회" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_height="20dp"
+                android:layout_width="70dp"
+                android:background="@drawable/ysc_sq4"
+                android:textAlignment="center"
+                android:text="유동 인원"/>
+            <TextView
+                android:layout_height="20dp"
+                android:layout_width="70dp"
+                android:background="@drawable/ysc_sq4"
+                android:textAlignment="center"
+                android:text=" 정상 체온"/>
+            <TextView
+                android:layout_height="20dp"
+                android:layout_width="70dp"
+                android:background="@drawable/ysc_sq4"
+                android:textAlignment="center"
+                android:textColor="#ff4444"
+                android:text="고온"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/total"
+                android:layout_height="20dp"
+                android:layout_width="70dp"
+                android:background="@drawable/ysc_sq4"
+                android:textAlignment="center"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/common"
+                android:layout_height="20dp"
+                android:layout_width="70dp"
+                android:background="@drawable/ysc_sq4"
+                android:textAlignment="center"
+                android:text="0"/>
+            <TextView
+                android:id="@+id/over"
+                android:layout_height="20dp"
+                android:layout_width="70dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ysc_sq4"
+                android:textAlignment="center"
+                android:text="0"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ysc_sq3" />
+
+</LinearLayout>
